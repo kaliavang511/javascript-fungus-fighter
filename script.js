@@ -3,18 +3,37 @@
 // Example:
 // let fungusHP = 100;
 
+let fungusHP = 0
+let yourAp = 100
+//state variable
+
+
 function onReady() {
-    console.log("Ready to go!")
-    
-    // Make sure you check the index.html file! 
-    // There are lots of buttons and things ready for you to hook into here!
-    
-    
-    // 🧠 Remember
-    // - Handle events that ->
-    // - Updates state which is ->
-    // - Rendered to the DOM
+document.querySelector('#submit-button').addEventListener('click', apCount);
+
 }
 
 
-onReady()
+
+//Event handler
+function apCount(event) {
+    event.preventDefault();
+    console.log("apCount works")
+
+    //funxtion not wokring, not sure why
+
+
+ let apDiv = document.getElementById("hp-text").text
+  apDiv.innerHTML = yourAp
+
+  // getting get hp text so everytime the button iscliked, it'll go down by 1 count
+}
+
+fungusHP -- 
+
+apCount()
+
+
+//need a if statement (if fungusHP > youAP you lose ) 
+
+
